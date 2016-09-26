@@ -24,15 +24,3 @@ ENV PATH $PATH:${ANDROID_HOME}/tools:$ANDROID_HOME/platform-tools:${GRADLE_HOME}
 
 RUN mkdir $ANDROID_HOME/licenses
 RUN echo -e "\n8933bad161af4178b1185d1a37fbf41ea5269c55" > "$ANDROID_HOME/licenses/android-sdk-license"
-
-RUN mkdir epsdemo
-RUN cd ./epsdemo
-RUN git clone https://ilaszlo:ilaszlo1@github.com/columbooo/eps-demo.git
-# RUN eps-demo/TestDemo/gradlew tasks
-
-# RUN apt-get install apt-transport-https
-# RUN apt-get update
-# RUN echo "deb https://download.go.cd /" | tee /etc/apt/sources.list.d/gocd.list
-# RUN curl https://download.go.cd/GOCD-GPG-KEY.asc | apt-key add -
-# RUN apt-get update
-# RUN apt-get install go-agent
